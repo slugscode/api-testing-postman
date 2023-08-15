@@ -7,7 +7,7 @@
   "item": [
     {
       "name": "List Users",
-      "_postman_id": "9a5c5250-7f00-42e7-81a0-ac27b60e8bd4",
+      "id": "9a5c5250-7f00-42e7-81a0-ac27b60e8bd4",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -34,7 +34,7 @@
     },
     {
       "name": "Single Users",
-      "_postman_id": "33013efe-97c2-4127-a6e7-0a0ff349b3b5",
+      "id": "33013efe-97c2-4127-a6e7-0a0ff349b3b5",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -47,7 +47,7 @@
     },
     {
       "name": "Single User Not Found",
-      "_postman_id": "6a74766b-66a2-4e5a-bfd1-c8337cad763a",
+      "id": "6a74766b-66a2-4e5a-bfd1-c8337cad763a",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -60,7 +60,7 @@
     },
     {
       "name": "List <Resource>",
-      "_postman_id": "be09b299-03a6-4b0e-bc5f-7db7abb9ddaa",
+      "id": "be09b299-03a6-4b0e-bc5f-7db7abb9ddaa",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -73,7 +73,7 @@
     },
     {
       "name": "Single <Resource> Not Found",
-      "_postman_id": "150de1d3-933d-4451-a0c6-ea1364ce843a",
+      "id": "150de1d3-933d-4451-a0c6-ea1364ce843a",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -86,7 +86,7 @@
     },
     {
       "name": "Create",
-      "_postman_id": "1a0ecd07-6d98-4999-9be9-906f940508b6",
+      "id": "1a0ecd07-6d98-4999-9be9-906f940508b6",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -108,7 +108,7 @@
     },
     {
       "name": "Update",
-      "_postman_id": "3d3c1037-0c0f-4e88-b1d2-5a495f123ec9",
+      "id": "3d3c1037-0c0f-4e88-b1d2-5a495f123ec9",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -130,7 +130,7 @@
     },
     {
       "name": "Delete",
-      "_postman_id": "8c889a55-8df4-4e1e-8e31-242063ab9855",
+      "id": "8c889a55-8df4-4e1e-8e31-242063ab9855",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -143,7 +143,7 @@
     },
     {
       "name": "Register <Succesful>",
-      "_postman_id": "21d9c838-adf4-4dbb-b25c-ea47e94d81c6",
+      "id": "21d9c838-adf4-4dbb-b25c-ea47e94d81c6",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -165,7 +165,7 @@
     },
     {
       "name": "Register <Unsuccessful>",
-      "_postman_id": "ed6d4d6a-a5cc-4281-a6ad-99297939143d",
+      "id": "ed6d4d6a-a5cc-4281-a6ad-99297939143d",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -187,7 +187,7 @@
     },
     {
       "name": "Login <Successful>",
-      "_postman_id": "5e34ee5d-a11a-43e0-aa50-9b55162becc9",
+      "id": "5e34ee5d-a11a-43e0-aa50-9b55162becc9",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -209,7 +209,7 @@
     },
     {
       "name": "Login <Unsuccesful>",
-      "_postman_id": "d3ebcd7c-c5d1-4f23-b97a-799b4e38e49f",
+      "id": "d3ebcd7c-c5d1-4f23-b97a-799b4e38e49f",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -218,10 +218,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"email\": \"peter@klaven\"\r\n}",
-          "options": {
-            "raw": {}
-          }
+          "raw": "{\r\n    \"email\": \"peter@klaven\"\r\n}"
         },
         "url": "{{Base_Url}}api/login"
       },
@@ -229,7 +226,7 @@
     },
     {
       "name": "Delay response",
-      "_postman_id": "1854f012-6469-479b-bee5-d9e1c46806da",
+      "id": "1854f012-6469-479b-bee5-d9e1c46806da",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -256,7 +253,7 @@
     },
     {
       "name": "Single <Resource>",
-      "_postman_id": "91a9a3ea-b920-4d3d-bdeb-778b9cb55976",
+      "id": "91a9a3ea-b920-4d3d-bdeb-778b9cb55976",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -269,7 +266,7 @@
     },
     {
       "name": "Update",
-      "_postman_id": "e07c2f76-f3da-4b46-abf0-0d060ea441b6",
+      "id": "e07c2f76-f3da-4b46-abf0-0d060ea441b6",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -305,7 +302,7 @@
   ],
   "variable": [
     {
-      "id": "bbcf4fcc-b26f-4f42-8ed7-96a279642cb3",
+      "id": "95388369-e566-4385-82da-946c471a4069",
       "key": "Base_Url",
       "value": "https://reqres.in/",
       "type": "string"
