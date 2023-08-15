@@ -1,0 +1,104 @@
+{
+  "info": {
+    "_postman_id": "6370e6a6-2ed9-4cfa-8384-a40508328006",
+    "name": "Countries",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "all",
+      "_postman_id": "c5b24073-255f-453f-bf07-e6681c7a469d",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{BASE_URL}}all"
+      },
+      "response": []
+    },
+    {
+      "name": "name",
+      "_postman_id": "f8babbbf-feba-4799-aee5-de2b72f09bd2",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{BASE_URL}}name/malaysia"
+      },
+      "response": []
+    },
+    {
+      "name": "capital",
+      "_postman_id": "3157fe73-d23e-496b-8b03-16bd2d036fa6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{BASE_URL}}capital/tallin"
+      },
+      "response": []
+    },
+    {
+      "name": "region",
+      "_postman_id": "0ab2f067-8db8-4272-9098-25fad70082f0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{BASE_URL}}/region/asia"
+      },
+      "response": []
+    },
+    {
+      "name": "currency",
+      "_postman_id": "4b4b9797-26c6-483f-b845-07f6ffdff5c9",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{BASE_URL}}/currency/rupiah"
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "45160917-1083-4372-9038-1d5cdc5a306e",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "6abe60f1-28c1-4a44-b317-dabb9635b1e2",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "ebfdaf42-0634-41e2-8fbb-351f12cf599f",
+      "key": "BASE_URL",
+      "value": "https://restcountries.com/v3.1/",
+      "type": "string"
+    }
+  ]
+}
