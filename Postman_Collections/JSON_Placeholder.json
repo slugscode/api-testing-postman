@@ -1,0 +1,504 @@
+{
+  "info": {
+    "_postman_id": "11a62bda-f838-4494-b691-f75efa8de974",
+    "name": "JSON Placeholder",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET 100 Post API",
+      "_postman_id": "d8b1626f-7945-4778-bb77-fd83e470c584",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{BASE_URL}}/posts"
+      },
+      "response": []
+    },
+    {
+      "name": "GET ALL Post BY USERID API",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "4dac22e3-236e-43fa-9688-c7fccceee02b",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "d438e747-61cb-4bdb-a8f4-74356248ed59",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/posts?userId=1",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "posts"
+          ],
+          "query": [
+            {
+              "key": "userId",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET SINGLE POST BY POSTID API",
+      "_postman_id": "5d1c6604-5417-47d8-a104-c2869e0d8b9e",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [],
+          "options": {
+            "urlencoded": {}
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/posts/?id=1",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "posts",
+            ""
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SUBMIT NEW POST API",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "c1f2ea74-aa5e-4900-a763-6d69babc34b0",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "f9a38424-baf4-4647-8da9-cf4e190f5271",
+            "exec": [
+              "{\r",
+              " \"title\": \"lorem ipsum\",\r",
+              " \"body\": \"lorem ipsum body\"\r",
+              "}"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "ecb9540b-a547-4c3d-bd3e-715ea55af23e",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\": \"lorem ipsum\",\r\n \"body\": \"lorem ipsum body\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{BASE_URL}}/posts"
+      },
+      "response": []
+    },
+    {
+      "name": "GET 500 COMMENTS API",
+      "_postman_id": "ccdfe11f-2f17-4cd7-a7c9-b99d66f5e35b",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/comments?postId=1",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "comments"
+          ],
+          "query": [
+            {
+              "key": "postId",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET ALL COMMENTS by POSTID API",
+      "_postman_id": "cc85679e-cc74-40d6-98e2-2d0afd79327c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [],
+          "options": {
+            "urlencoded": {}
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/comments?postId=1",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "comments"
+          ],
+          "query": [
+            {
+              "key": "postId",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET 100 ALBUMS API",
+      "_postman_id": "c1d795de-00cb-40ef-b713-d786d10d05f8",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{BASE_URL}}/albums"
+      },
+      "response": []
+    },
+    {
+      "name": "GET SINGLE ALBUM BY ID API",
+      "_postman_id": "61d9ba96-a230-4c62-b142-a773e3c08a72",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/albums?id=3",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "albums"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "3"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET 5000 PHOTOS API",
+      "_postman_id": "5577cdae-8a1d-408b-847b-039c3f1026fe",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{BASE_URL}}/photos"
+      },
+      "response": []
+    },
+    {
+      "name": "GET SINGLE PHOTO BY ID API",
+      "_postman_id": "14908692-7ef1-4482-809d-41a2ef511ce0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/photos?id=2",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "photos"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET ALL PHOTOS BY ALBUMID API",
+      "_postman_id": "911e8846-683f-4320-ac1f-4f0ce67d2454",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/photos?albumId=2",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "photos"
+          ],
+          "query": [
+            {
+              "key": "albumId",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET 200 TODOS API",
+      "_postman_id": "369f4ae1-9d6f-46f6-82cc-aee4d0bb0253",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{BASE_URL}}/todos"
+      },
+      "response": []
+    },
+    {
+      "name": "GET SINGLE TODO BY ID API",
+      "_postman_id": "c5410e85-152a-4e7c-81fd-340a139cccfa",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/todos?id=3",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "todos"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "3"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET 10 USERS API",
+      "_postman_id": "6ff75866-0540-4608-9f8a-ef09c452d989",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{BASE_URL}}/users"
+      },
+      "response": []
+    },
+    {
+      "name": "GET SINGLE USER BY ID API",
+      "_postman_id": "4082e86b-7c98-4301-b0ec-b8b16133b792",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/users?id=6",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "users"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT SINGLE POST BY ID POST",
+      "_postman_id": "778343f0-111c-4881-afe7-d08cd427d561",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\": \"demo put\",\r\n \"body\": \"isi body untuk PUT\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{BASE_URL}}/posts/1"
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH SINGLE POST BY ID POST",
+      "_postman_id": "1a74240f-d64c-4af7-9a1f-a19bf752e0c5",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\": \"demo patch\",\r\n \"body\": \"isi body untuk PATCH\"\r\n}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "{{BASE_URL}}/posts/1"
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE SINGLE POST BY ID USER",
+      "_postman_id": "23aef2fa-3c8a-469f-ab9c-86c4009938ee",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\" : \"sunt aut facere repellat provident \r\noccaecati excepturi optio reprehenderit\"\r\n}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/post?id=1",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "post"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "293db73d-0bbd-4075-bc43-b215ca5fbeca",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "d36ec22d-ecc2-43fb-b4a7-28110eecf4ce",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "ab049f1a-a627-4ac0-9192-c4b66f149c65",
+      "key": "BASE_URL",
+      "value": "https://jsonplaceholder.typicode.com",
+      "type": "string"
+    }
+  ]
+}
