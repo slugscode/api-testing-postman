@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "208fe184-0f7a-4601-b8f0-215b680c44b8",
+		"name": "Bookstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Account User",
+			"id": "359ab6ac-454c-4e06-a6a2-5d4940c1f4bf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"kathy123\",\r\n  \"password\": \"B1kinib0tt0&\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://demoqa.com/Account/v1/User"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Account Authorized",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3145419c-e27a-4b15-a686-a732e258481a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "1faa08b9-3f79-47fe-a03f-3006f47ddccf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"kathy123\",\r\n  \"password\": \"B1kinib0tt0&\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://demoqa.com/Account/v1/Authorized"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Acc Auth while username and password are invalid",
+			"id": "0b5b302a-b1bd-43f0-861f-e1fe27355eb1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"ashley123\",\r\n  \"password\": \"B1kinib0tt0&\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://demoqa.com/Account/v1/Authorized"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Generate Token",
+			"id": "dc59acd8-3eed-4910-ab10-7199ba6ae064",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"kathy123\",\r\n  \"password\": \"B1kinib0tt0&\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://demoqa.com/Account/v1/GenerateToken"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Generate token with invalid username and password",
+			"id": "716cb771-b6d9-4bca-adfc-a8c44d51fc22",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"ashley123\",\r\n  \"password\": \"B1kinib0tt0&\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://demoqa.com/Account/v1/GenerateToken"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User by UUID",
+			"id": "3f953739-310b-405c-9906-4c256af0dfd1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://demoqa.com/Account/v1/User/e404f9a353424fe78b34317755b1da51"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Books",
+			"id": "5f752f7f-433d-4503-ba94-63166c924941",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://demoqa.com/BookStore/v1/Books"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book by ISBN",
+			"id": "12758426-5d6b-4d67-81e6-21e269bf37e7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://demoqa.com/BookStore/v1/Book?ISBN=9781449325862",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"BookStore",
+						"v1",
+						"Book"
+					],
+					"query": [
+						{
+							"key": "ISBN",
+							"value": "9781449325862"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
